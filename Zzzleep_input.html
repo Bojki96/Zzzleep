@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Zzzleep_input.css">
+    <title>How did you sleep?</title>
+</head>
+<body>
+<h1>How did you sleep?</h1>
+<div class = "whole">
+    <div id = "container">
+        <div class = "lines"></div>
+        <form id = "form">
+            <input id="from" type="time" onchange="showTimeValueFrom()" value = "22:30">
+            <input id="til" type="time" onchange="showTimeValueTil()" value = "06:30">
+        </form>
+        <div class ="time-text">
+            <div class = "from-text">Fallen asleep</div>
+            <div class = "til-text">Woken up</div>
+        </div>
+    </div>
+    <p id = "before-bed">What did you take before bed?</p>
+    <div class = "all-inputs">
+        <ol id = "inputs">
+            <li><input class="improvements" id = "first" type="text" placeholder="Coffee"></li>
+            <li><input class="improvements" id = "second" type="text"></li>
+            <li><input class="improvements" id = "third" type="text"></li>
+            <li><input class="improvements" id = "fourth" type="text"></li>
+        </ol>
+        <textarea class="notes" name="paragraph_text" placeholder="Dreams, notes"></textarea>
+    </div>
+    <hr>
+</div>
+    <div id = "plus">+</div>
+    <div id = "box-bottom"></div>
+    <a id = "return" href = "C:\Users\Dorian\Desktop\Zzzleep\Zzzleep.html" onclick="saveValues()">
+        <i class="fa fa-chevron-left"></i>
+    </a>
+    <script src="Zzzleep_input.js"></script>
+</body>
+</html>

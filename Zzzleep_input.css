@@ -1,0 +1,231 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(320deg, hsl(216, 100%, 10%) 80%, hsl(216, 100%, 14%) 80%) fixed;
+}
+
+h1{
+    font-size: 35px;
+    color: hsl(0, 2%, 84%);
+    text-align: center;
+}
+
+#container{
+    width: 100%;
+    height: 170px;
+    background-image: url('Crte.png');
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    padding: 5px 0px 5px 5px;
+    align-items: center;
+    position: relative;
+}
+
+.lines{
+    background-image: url('Crte.png');
+}
+
+#form{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    /*border: 1px black solid;*/
+    padding: 0 15px 0 0;
+    justify-content: left;
+    background-color: hsl(216, 100%, 10%);
+}
+
+
+#from{
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    background-color: hsl(0, 2%, 84%);
+    border: hidden;
+    margin-bottom: 10px;
+}
+
+#til{
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    background-color: hsl(0, 2%, 84%);
+    border: hidden;
+}
+
+.time-text{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    /*border: 1px solid;*/
+    height: 120px;
+    font-size: 25px;
+    background-color: hsl(216, 100%, 10%);
+}
+
+.from-text{
+    color:hsl(0, 2%, 84%);
+    text-align: left;
+}
+
+.til-text{
+    color:hsl(0, 2%, 84%);
+    text-align: left;
+}
+
+#cancel{
+    border: 2px solid hsl(216, 100%, 5%);
+    border-radius: 5px;
+    color: hsl(0, 2%, 84%);
+    background-color:hsl(216, 100%, 14%);
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    right: 15px;
+    top: -20px;
+    cursor: pointer;
+}
+
+#cancel:hover{
+    background-color:hsl(216, 100%, 20%);
+}
+
+.all-inputs{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    height:auto;
+   /* border: black solid;*/
+}
+
+#before-bed{
+    font-size: 25px;
+    color:hsl(0, 2%, 84%);
+    padding: 10px 0 0 15px;
+    width: 210px;
+    /*border:black solid;*/
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+#inputs{
+   /* border: black solid;*/
+    display: grid;
+    grid-template-rows: 30px 30px 30px;
+    gap: 20px;
+    justify-content: start;
+    font-size: 25px;
+}
+
+ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+  }
+
+  ol li:before {
+    color: hsl(0, 2%, 84%);
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+  }
+
+.improvements{
+    color:hsl(0, 2%, 84%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    width: 150px;
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: solid 1px hsl(0, 2%, 84%);
+}
+
+.notes{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color:hsl(0, 2%, 84%);
+    text-align: top;
+    height: 180px;
+    padding: 0 0 0 20px;
+    border-left:black solid;
+    background-color:transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: hidden;
+    resize: none;
+}
+
+hr{
+    border:black solid 1px;
+    margin-bottom: 40px;
+}
+
+#plus{
+    font-size: 80px;
+    color: hsl(0, 2%, 84%);
+    border:hsl(216, 100%, 10%) 3px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    line-height: 25px;
+    padding: 3px 4px 0 0;
+    background-color: hsl(216, 100%, 10%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+#plus:hover{
+    background-color:hsl(216, 100%, 18%);
+    border-color: hsl(216, 100%, 18%);
+    color: hsl(0, 2%, 100%);
+}
+
+#box-bottom{
+    position:fixed;
+    /*border:hsl(0, 0%, 0%) solid;*/
+    border-radius: 5px;
+    width: 300px;
+    height:40px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    background-color:hsla(216, 100%, 18%,0.92);
+    clip-path: polygon(18% 0, 82% 0, 100% 100%, 0% 100%);
+}
+
+#return{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    border-right: solid hsl(216, 100%, 5%) 5px;
+    border-radius: 5px 0 0 5px;
+    text-decoration: none;
+    color:hsl(0, 2%, 84%);
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
+    padding-right: 2px;
+    background-color: hsl(216, 100%, 18%);
+}
+
+#return:hover{
+    background-color:hsl(216, 100%, 25%);
+    border-color: hsl(216, 100%, 25%);
+    border-right: solid hsl(216, 100%, 5%) 5px;
+    color: hsl(0, 2%, 100%);
+}
